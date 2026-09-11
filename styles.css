@@ -473,6 +473,17 @@ h1, h2, h3, h4 { text-wrap: balance; line-height: 1.1; letter-spacing: -0.03em; 
   margin-bottom: .75rem;
 }
 
+.project-card-impact {
+  font-size: .875rem;
+  color: var(--accent-2);
+  background: rgba(6,182,212,.07);
+  border-left: 2px solid var(--accent-2);
+  padding: .5rem .75rem;
+  border-radius: 0 6px 6px 0;
+  margin-bottom: .85rem;
+  line-height: 1.5;
+}
+
 .project-card-desc {
   color: var(--text-subtle);
   font-size: .9375rem;
