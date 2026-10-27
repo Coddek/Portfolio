@@ -127,11 +127,46 @@
     });
   }
 
+  /* DIPLOMAS: abre la imagen en un modal; sin JS el link abre la imagen sola */
+  function initCertModal() {
+    var modal = $("#cert-modal");
+    if (!modal || typeof modal.showModal !== "function") return;
+
+    var img = $(".cert-modal-img", modal);
+    var error = $(".cert-modal-error", modal);
+
+    img.addEventListener("error", function() {
+      img.hidden = true;
+      error.hidden = false;
+    });
+
+    $$(".cert-view").forEach(function(a) {
+      a.addEventListener("click", function(e) {
+        e.preventDefault();
+        img.hidden = false;
+        error.hidden = true;
+        img.alt = "Diploma: " + a.getAttribute("aria-label").replace(/^Ver diploma: /, "");
+        img.src = a.getAttribute("href");
+        modal.showModal();
+      });
+    });
+
+    $(".cert-modal-close", modal).addEventListener("click", function() { modal.close(); });
+
+    // Click en el fondo (fuera de la imagen) cierra
+    modal.addEventListener("click", function(e) {
+      if (e.target === modal) modal.close();
+    });
+
+    modal.addEventListener("close", function() { img.removeAttribute("src"); });
+  }
+
   /* BOOT */
   function boot() {
     safe(initNav, "initNav");
     safe(initReveals, "initReveals");
     safe(initStackHover, "initStackHover");
+    safe(initCertModal, "initCertModal");
 
     if (window.gsap) {
       safe(initHeroAnimations, "initHeroAnimations");
