@@ -2,69 +2,62 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agustín Novarese — AI Backend Developer</title>
-  <meta name="description" content="Desarrollador backend especializado en IA aplicada. Construyo sistemas RAG, bots inteligentes y pipelines de automatización que funcionan en producción.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Agustín Novarese — Desarrollador Full Stack con IA aplicada</title>
+  <meta name="description" content="Desarrollador full stack especializado en IA aplicada. Diseño, construyo y llevo a producción sistemas RAG, bots con tools y apps para negocios reales.">
+  <meta name="theme-color" content="#0E1C2C">
 
   <!-- OG / Social -->
-  <meta property="og:title" content="Agustín Novarese — AI Backend Developer">
-  <meta property="og:description" content="Desarrollador backend con foco en IA aplicada: chat con documentos (RAG), transcripción en vivo y apps con Supabase para negocios reales.">
+  <meta property="og:title" content="Agustín Novarese — Desarrollador Full Stack con IA aplicada">
+  <meta property="og:description" content="Desarrollador full stack con foco en IA aplicada: chat con documentos (RAG), transcripción en vivo y apps con Supabase para negocios reales.">
   <meta property="og:type" content="profile">
   <meta property="og:url" content="https://portfolio-coddeks-projects.vercel.app/">
   <meta property="og:image" content="https://portfolio-coddeks-projects.vercel.app/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Agustín Novarese — AI Backend Developer">
+  <meta property="og:image:alt" content="Agustín Novarese — Desarrollador Full Stack con IA aplicada">
   <meta name="twitter:card" content="summary_large_image">
 
-  <!-- JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Agustín Novarese",
-    "jobTitle": "AI Backend Developer",
+    "jobTitle": "Desarrollador Full Stack",
     "email": "agustinfnovarese@gmail.com",
     "url": "https://portfolio-coddeks-projects.vercel.app/",
-    "sameAs": [
-      "https://github.com/Coddek",
-      "https://www.linkedin.com/in/agustinnovarese/"
-    ],
+    "sameAs": ["https://github.com/Coddek", "https://www.linkedin.com/in/agustinnovarese/"],
     "address": { "@type": "PostalAddress", "addressCountry": "AR" }
   }
   </script>
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
-
-  <link rel="stylesheet" href="styles.css">
-
-  <!-- Skip link -->
-  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
 
   <!-- NAV -->
-  <nav class="nav" id="nav" role="navigation" aria-label="Navegación principal">
+  <nav class="nav" id="nav" aria-label="Navegación principal">
     <div class="nav-inner">
-      <a href="#" class="nav-logo" aria-label="Inicio">AN</a>
-      <ul class="nav-links" role="list">
+      <a href="#top" class="nav-logo" aria-label="Inicio">Nova</a>
+      <ul class="nav-links">
         <li><a href="#proyectos">Proyectos</a></li>
         <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#certificaciones">Certs</a></li>
+        <li><a href="#formacion">Formación</a></li>
         <li><a href="#contacto" class="nav-cta">Contacto</a></li>
       </ul>
-      <button class="nav-burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-mobile">
-        <span></span><span></span><span></span>
+      <button class="nav-burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-mobile">
+        <span></span><span></span>
       </button>
     </div>
     <div class="nav-mobile" id="nav-mobile" aria-hidden="true">
-      <ul role="list">
+      <ul>
         <li><a href="#proyectos">Proyectos</a></li>
         <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#certificaciones">Certificaciones</a></li>
+        <li><a href="#formacion">Formación</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </div>
@@ -73,409 +66,225 @@
   <main id="main">
 
     <!-- HERO -->
-    <section class="hero" aria-label="Presentación">
-      <div class="hero-bg" aria-hidden="true">
-        <div class="hero-grid"></div>
-        <div class="hero-glow hero-glow--1"></div>
-        <div class="hero-glow hero-glow--2"></div>
-      </div>
-      <div class="hero-content">
-        <div class="hero-badge">
-          <span class="hero-badge-dot" aria-hidden="true"></span>
-          Disponible para trabajar
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="wrap hero-inner">
+        <div class="hero-text">
+          <p class="status"><span class="status-dot" aria-hidden="true"></span>Abierto a nuevos roles</p>
+          <h1 class="hero-title" id="hero-title">Agustín<br>Novarese</h1>
+          <p class="hero-role">Desarrollador Full Stack, especializado en IA aplicada</p>
+          <p class="hero-sub">
+            Diseño y construyo sistemas completos con IA aplicada, del backend a la
+            interfaz, y los llevo a producción. Dos de mis apps las usan comercios
+            reales todos los días.
+          </p>
+          <div class="hero-actions">
+            <a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
+            <a href="Agustin_Novarese_CV_2026.pdf" download class="btn btn--ghost">Descargar CV</a>
+          </div>
         </div>
-        <h1 class="hero-title">
-          <span class="hero-title-name">Agustín Novarese</span>
-          <span class="hero-title-role">AI Backend Developer</span>
-        </h1>
-        <p class="hero-sub">
-          Diseño e implemento sistemas de IA que resuelven problemas reales —
-          desde la arquitectura hasta producción.
-        </p>
-        <div class="hero-actions">
-          <a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
-          <a href="mailto:agustinfnovarese@gmail.com" class="btn btn--ghost">Contactarme</a>
-        </div>
-        <div class="hero-stack" aria-label="Stack principal">
-          <span>Python</span><span>Claude API</span><span>RAG</span><span>Supabase</span><span>React</span><span>Groq</span>
-        </div>
-      </div>
-      <div class="hero-scroll" aria-hidden="true">
-        <span>scroll</span>
-        <div class="hero-scroll-line"></div>
+
+        <figure class="blueprint" aria-labelledby="hero-caption">
+          <div class="system-tabs" role="tablist" aria-label="Elegí un sistema para ver su arquitectura">
+            <button class="system-tab" type="button" role="tab" id="tab-archichat" aria-controls="hero-diagram" aria-selected="true" data-system="archichat">ArchiChat</button>
+            <button class="system-tab" type="button" role="tab" id="tab-cierre" aria-controls="hero-diagram" aria-selected="false" tabindex="-1" data-system="cierre-caja">Cierre de Caja</button>
+            <button class="system-tab" type="button" role="tab" id="tab-mtc" aria-controls="hero-diagram" aria-selected="false" tabindex="-1" data-system="bot-mtc">Bot MTC</button>
+          </div>
+          <div class="diagram diagram--hero" id="hero-diagram" role="tabpanel" aria-live="polite"></div>
+          <figcaption class="blueprint-caption" id="hero-caption">
+            Tu pregunta busca en tus documentos con pgvector y el modelo responde con lo que encontró, citando de dónde sale cada dato. También escucha clases y reuniones en vivo. Si Groq no contesta, responde Gemini.
+          </figcaption>
+          <ul class="legend" aria-label="Referencias del diagrama">
+            <li><span class="legend-key is-in" aria-hidden="true"></span>Entrada</li>
+            <li><span class="legend-key is-ai" aria-hidden="true"></span>IA</li>
+            <li><span class="legend-key is-data" aria-hidden="true"></span>Datos</li>
+            <li><span class="legend-key is-out" aria-hidden="true"></span>Resultado</li>
+          </ul>
+        </figure>
       </div>
     </section>
 
     <!-- PROYECTOS -->
-    <section class="section projects" id="proyectos" aria-labelledby="projects-heading">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-label">Proyectos</span>
+    <section class="section" id="proyectos" aria-labelledby="projects-heading">
+      <div class="wrap">
+        <header class="section-head">
           <h2 id="projects-heading">Lo que construí</h2>
-          <p>Sistemas reales, en producción o con código público.</p>
-        </div>
+          <p>Sistemas en producción o con código público. Cada uno con su plano.</p>
+        </header>
 
-        <!-- Proyectos destacados -->
-        <div class="projects-featured" data-projects-featured>
+        <div class="projects">
 
-          <article class="project-card project-card--featured">
-            <div class="project-card-header">
-              <div class="project-tag">RAG · IA en vivo</div>
+          <article class="project">
+            <div class="project-body">
+              <p class="project-kind">RAG e IA en vivo</p>
+              <h3 class="project-title">ArchiChat</h3>
+              <p class="project-impact">Subís un documento (PDF, texto o URL) o grabás una clase o reunión, y chateás con su contenido con citas de dónde sale cada respuesta. En vivo, explica los conceptos que van apareciendo sin salir del video. Probado en una clase real.</p>
+              <p class="project-desc">Pipeline RAG con pgvector, transcripción con Whisper en tramos de 10 s y ventana flotante (Picture-in-Picture). Al terminar una sesión arma un resumen y la convierte en documento para el chat. Fallback automático entre Groq y Gemini, autenticación con RLS y 18 tests con Vitest.</p>
+              <ul class="tags"><li>Next.js</li><li>TypeScript</li><li>pgvector</li><li>Whisper</li><li>Groq</li><li>Gemini</li><li>Supabase</li><li>Vitest</li></ul>
               <div class="project-links">
-                <a href="https://github.com/Coddek/archiChat" target="_blank" rel="noopener" aria-label="Ver código de ArchiChat">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                  GitHub
-                </a>
-                <a href="https://archi-chat.vercel.app" target="_blank" rel="noopener" aria-label="Ver ArchiChat en producción">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
-                  En vivo
-                </a>
+                <a href="https://archi-chat.vercel.app" target="_blank" rel="noopener">Abrir ArchiChat</a>
+                <a href="https://github.com/Coddek/archiChat" target="_blank" rel="noopener">Código en GitHub</a>
               </div>
             </div>
-            <h3 class="project-card-title">ArchiChat</h3>
-            <p class="project-card-impact">Chateás con tus documentos y con lo que escuchás en vivo: transcribe una clase o una reunión de Zoom o Meet, explica solo los conceptos que van apareciendo y responde dudas sin salir del video. Probado en una clase real.</p>
-            <p class="project-card-desc">RAG con pgvector y respuestas con fuentes citadas, más búsqueda web. Sessions transcribe con Whisper en tramos de 10 s, detecta conceptos, ofrece una ventana flotante (Picture-in-Picture) y al finalizar arma un resumen y convierte la sesión en un documento para el chat. Cada llamada a la IA tiene respaldo entre Groq y Gemini, todo sobre planes gratuitos.</p>
-            <div class="project-card-stack">
-              <span>Next.js</span><span>pgvector</span><span>Whisper</span><span>Groq</span><span>Gemini</span><span>Supabase</span>
-            </div>
+            <div class="project-plan"><div class="diagram" data-diagram="archichat"></div></div>
           </article>
 
-          <article class="project-card project-card--featured">
-            <div class="project-card-header">
-              <div class="project-tag">Slack · Groq · Python</div>
+          <article class="project">
+            <div class="project-body">
+              <p class="project-kind">Comercio real, uso diario</p>
+              <h3 class="project-title">Cierre de Caja</h3>
+              <p class="project-impact">Reemplaza la hoja del cuaderno de un local con un cierre que hace la misma cuenta que el papel, validada al peso, y convierte los cierres en métricas para decidir promociones y horarios.</p>
+              <p class="project-desc">React y TypeScript con Supabase: el arqueo se calcula en una función de Postgres y los cambios se sincronizan en vivo entre dispositivos. El panel compara cada día con el mismo día del año anterior y muestra ventas por mes, días y horarios fuertes y mezcla de medios de pago, con gráficos SVG propios.</p>
+              <ul class="tags"><li>React</li><li>TypeScript</li><li>Supabase</li><li>Realtime</li><li>Postgres</li></ul>
               <div class="project-links">
-                <span class="project-private">Privado</span>
+                <a href="https://cierre-caja-drab.vercel.app" target="_blank" rel="noopener">Abrir Cierre de Caja</a>
+                <a href="https://github.com/Coddek/Cierre-Caja" target="_blank" rel="noopener">Código en GitHub</a>
               </div>
             </div>
-            <h3 class="project-card-title">Bot MTC — Slack + IA</h3>
-            <p class="project-card-impact">Automatiza el onboarding de nuevos estudiantes en ITSchool, reemplazando respuestas manuales repetitivas por un asistente disponible 24/7.</p>
-            <p class="project-card-desc">Bot de Slack con arquitectura de tools, Groq (Llama 3.1) como motor de lenguaje y Google Sheets como base de datos dinámica.</p>
-            <div class="project-card-stack">
-              <span>Python</span><span>Groq</span><span>Slack API</span><span>Google Sheets</span>
-            </div>
+            <div class="project-plan"><div class="diagram" data-diagram="cierre-caja"></div></div>
           </article>
 
-          <article class="project-card project-card--featured">
-            <div class="project-card-header">
-              <div class="project-tag">React · Claude API · Supabase</div>
-              <div class="project-links">
-                <span class="project-private">Privado</span>
-              </div>
+          <article class="project">
+            <div class="project-body">
+              <p class="project-kind">Bot con tools para ITSchool</p>
+              <h3 class="project-title">Bot MTC</h3>
+              <p class="project-impact">Automatiza el onboarding de nuevos estudiantes en ITSchool y reemplaza respuestas manuales repetitivas por un asistente disponible las 24 horas.</p>
+              <p class="project-desc">Bot de Slack con arquitectura de tools: el modelo decide qué herramienta usar en cada consulta, lee el resultado y redacta la respuesta. Google Sheets funciona como base de datos dinámica.</p>
+              <ul class="tags"><li>Python</li><li>Groq</li><li>Slack API</li><li>Google Sheets</li></ul>
+              <p class="project-private">Proyecto para empresa, código privado</p>
             </div>
-            <h3 class="project-card-title">Plataforma de Auditoría Kelsoft</h3>
-            <p class="project-card-impact">Redujo horas de auditoría manual a minutos — el equipo la usa todos los días en producción.</p>
-            <p class="project-card-desc">Plataforma web que automatiza clasificación y análisis de catálogo usando Claude API, con React en frontend y Supabase como backend en tiempo real.</p>
-            <div class="project-card-stack">
-              <span>React</span><span>Claude API</span><span>Supabase</span><span>Python</span>
-            </div>
+            <div class="project-plan"><div class="diagram" data-diagram="bot-mtc"></div></div>
           </article>
 
-          <article class="project-card project-card--featured">
-            <div class="project-card-header">
-              <div class="project-tag">React · Supabase · RLS</div>
+          <article class="project">
+            <div class="project-body">
+              <p class="project-kind">Comercio real, uso diario</p>
+              <h3 class="project-title">Asiento Contable</h3>
+              <p class="project-impact">Reemplaza el cuaderno de fiado por una cuenta corriente digital: cada cliente tiene su saldo actualizado al instante.</p>
+              <p class="project-desc">React y Vite en el frontend, Supabase (Postgres, Auth y Row Level Security) sin backend intermedio. Cada usuario ve solo sus propios clientes, garantizado a nivel de base de datos.</p>
+              <ul class="tags"><li>React</li><li>Vite</li><li>Supabase</li><li>Row Level Security</li></ul>
               <div class="project-links">
-                <a href="https://github.com/Coddek/Asiento-Contable" target="_blank" rel="noopener" aria-label="Ver código de Asiento Contable">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                  GitHub
-                </a>
-                <a href="https://asiento-contable.vercel.app" target="_blank" rel="noopener" aria-label="Ver demo en vivo de Asiento Contable">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
-                  Demo
-                </a>
+                <a href="https://asiento-contable.vercel.app" target="_blank" rel="noopener">Abrir la demo</a>
+                <a href="https://github.com/Coddek/Asiento-Contable" target="_blank" rel="noopener">Código en GitHub</a>
               </div>
             </div>
-            <h3 class="project-card-title">Asiento Contable</h3>
-            <p class="project-card-impact">Reemplaza el cuaderno de fiado por una cuenta corriente digital — cada cliente tiene su saldo actualizado al instante.</p>
-            <p class="project-card-desc">React + Vite en el frontend, Supabase (Postgres + Auth + Row Level Security) sin backend intermedio: cada usuario ve solo sus propios clientes, garantizado a nivel de base de datos.</p>
-            <div class="project-card-stack">
-              <span>React</span><span>Vite</span><span>Supabase</span><span>Row Level Security</span>
-            </div>
+            <div class="project-plan"><div class="diagram" data-diagram="asiento-contable"></div></div>
           </article>
 
-
-          <article class="project-card project-card--featured">
-            <div class="project-card-header">
-              <div class="project-tag">React · Supabase · Realtime</div>
-              <div class="project-links">
-                <a href="https://github.com/Coddek/Cierre-Caja" target="_blank" rel="noopener" aria-label="Ver código de Cierre de Caja">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                  GitHub
-                </a>
-                <a href="https://cierre-caja-drab.vercel.app" target="_blank" rel="noopener" aria-label="Ver Cierre de Caja en producción">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
-                  En vivo
-                </a>
-              </div>
+          <article class="project">
+            <div class="project-body">
+              <p class="project-kind">Herramienta interna, en desarrollo</p>
+              <h3 class="project-title">Plataforma de Auditoría Kelsoft</h3>
+              <p class="project-impact">Plataforma interna de auditorías para el equipo de catálogo, con un asistente que responde consultas sobre información operativa en lenguaje natural.</p>
+              <p class="project-desc">React y Supabase, con autenticación, permisos por rol y datos en tiempo real. El asistente usa LLMs para consultar los datos de la plataforma. Participo en su desarrollo.</p>
+              <ul class="tags"><li>React</li><li>Supabase</li><li>Realtime</li><li>LLMs</li></ul>
+              <p class="project-private">Proyecto para empresa, código privado</p>
             </div>
-            <h3 class="project-card-title">Cierre de Caja</h3>
-            <p class="project-card-impact">Reemplaza la hoja del cuaderno de un local —con un cierre que hace la misma cuenta que el papel, validada al peso— y convierte los cierres en métricas para decidir promociones y horarios.</p>
-            <p class="project-card-desc">React + TypeScript con Supabase: el arqueo se calcula en una función de Postgres y los cambios se sincronizan en vivo entre dispositivos. Suma un panel de métricas: comparación con el mismo día del año anterior, ventas por mes, días y horarios fuertes y mezcla de medios de pago, con gráficos SVG propios.</p>
-            <div class="project-card-stack">
-              <span>React</span><span>TypeScript</span><span>Supabase</span><span>Realtime</span><span>Métricas de negocio</span>
-            </div>
+            <div class="project-plan"><div class="diagram" data-diagram="auditoria"></div></div>
           </article>
         </div>
 
-        <!-- Proyectos secundarios -->
-        <div class="projects-secondary">
-          <h3 class="projects-secondary-title">Otros proyectos</h3>
-          <div class="projects-grid" data-projects-secondary>
-
-            <article class="project-mini">
-              <div class="project-mini-header">
-                <h4>Scraper Competitivo</h4>
-                <span class="project-private">Privado</span>
-              </div>
-              <p>Extracción de precios de Mercado Libre con evasión anti-bots y matching semántico de productos.</p>
-              <div class="project-mini-stack"><span>Python</span><span>Playwright</span><span>OCR</span></div>
-            </article>
-
-            <article class="project-mini">
-              <div class="project-mini-header">
-                <h4>Análisis NFL 2012–2014</h4>
-                <a href="https://github.com/Coddek/analisis-contusiones-nfl-2012-2014" target="_blank" rel="noopener" aria-label="GitHub NFL">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                </a>
-              </div>
-              <p>Análisis exploratorio y visualización de datos sobre lesiones en la NFL con Python y pandas.</p>
-              <div class="project-mini-stack"><span>Python</span><span>Pandas</span><span>Matplotlib</span></div>
-            </article>
-
-            <article class="project-mini">
-              <div class="project-mini-header">
-                <h4>Tienda de Pastas CRUD</h4>
-                <a href="https://github.com/Coddek/tienda-pastas-crud" target="_blank" rel="noopener" aria-label="GitHub CRUD">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                </a>
-              </div>
-              <p>Aplicación de gestión para una tienda de pastas con operaciones CRUD completas en Python.</p>
-              <div class="project-mini-stack"><span>Python</span><span>MySQL</span></div>
-            </article>
-
-          </div>
+        <div class="others">
+          <h3 class="others-title">Otros proyectos</h3>
+          <ul class="others-list">
+            <li>
+              <h4>Scraper competitivo</h4>
+              <p>Extracción de precios de Mercado Libre con evasión anti-bots y matching de productos con OCR, fuzzy matching y scoring de confianza.</p>
+              <span class="others-meta">Python, Playwright, OCR. Código privado.</span>
+            </li>
+            <li>
+              <h4><a href="https://github.com/Coddek/analisis-contusiones-nfl-2012-2014" target="_blank" rel="noopener">Análisis NFL 2012–2014</a></h4>
+              <p>Análisis exploratorio y visualización de datos sobre contusiones en la NFL.</p>
+              <span class="others-meta">Python, Pandas, Matplotlib</span>
+            </li>
+            <li>
+              <h4><a href="https://github.com/Coddek/tienda-pastas-crud" target="_blank" rel="noopener">Tienda de Pastas CRUD</a></h4>
+              <p>Aplicación de gestión para una tienda de pastas con operaciones CRUD completas.</p>
+              <span class="others-meta">Python, MySQL</span>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <!-- STACK -->
-    <section class="section stack-section" aria-labelledby="stack-heading">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-label">Stack</span>
-          <h2 id="stack-heading">Tecnologías</h2>
-        </div>
-        <div class="stack-grid" role="list">
-          <div class="stack-item" role="listitem"><span class="stack-icon">🐍</span> Python</div>
-          <div class="stack-item" role="listitem"><span class="stack-icon">🤖</span> Claude API</div>
-          <div class="stack-item" role="listitem"><span class="stack-icon">⚡</span> Groq</div>
-          <div class="stack-item" role="listitem"><span class="stack-icon">🔍</span> RAG / pgvector</div>
-          <div class="stack-item" role="listitem"><span class="stack-icon">🗄️</span> Supabase</div>
-          <div class="stack-item" role="listitem"><span class="stack-icon">⚛️</span> React</div>
-          <div class="stack-item" role="listitem"><span class="stack-icon">📘</span> TypeScript</div>
-          <div class="stack-item" role="listitem"><span class="stack-icon">🐘</span> PostgreSQL</div>
-          <div class="stack-item" role="listitem"><span class="stack-icon">🎭</span> Playwright</div>
-          <div class="stack-item" role="listitem"><span class="stack-icon">💬</span> Slack API</div>
-          <div class="stack-item" role="listitem"><span class="stack-icon">🔧</span> Git</div>
-          <div class="stack-item" role="listitem"><span class="stack-icon">🧠</span> LangChain</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SOBRE MI -->
-    <section class="section about" id="sobre-mi" aria-labelledby="about-heading">
-      <div class="container about-inner">
+    <!-- SOBRE MÍ + STACK -->
+    <section class="section section--alt" id="sobre-mi" aria-labelledby="about-heading">
+      <div class="wrap about">
         <div class="about-text">
-          <span class="section-label">Sobre mí</span>
-          <h2 id="about-heading">Construyo sistemas,<br>no solo prompts.</h2>
-          <p>
-            Desarrollador backend con foco en IA aplicada. Aprendí de forma autodidacta y construí
-            sistemas reales que resuelven problemas concretos — no prototipos, sino herramientas
-            que equipos usan todos los días.
-          </p>
-          <p>
-            Trabajo con IA como herramienta, no como reemplazo del criterio técnico.
-          </p>
-          <div class="about-education">
-            <div class="about-edu-item">
-              <span class="about-edu-icon">🎓</span>
-              <div>
-                <strong>Ingeniería en Sistemas de Información</strong>
-                <span>UTN FRBA · 2023 → cursando</span>
-              </div>
-            </div>
-          </div>
+          <h2 id="about-heading">Del problema a producción.</h2>
+          <p>Soy desarrollador full stack especializado en IA aplicada. Desde 2024 trabajo en Kelsoft como Desarrollador Backend y Analista de Catálogo, donde desarrollé scrapers de e-commerce con evasión de bloqueos y participo en una plataforma interna de auditorías con un asistente basado en LLMs.</p>
+          <p>Me ocupo del sistema completo: entiendo el problema, diseño la arquitectura, decido dónde la IA aporta valor y lo llevo a producción hasta que queda en manos del usuario.</p>
+          <p class="about-edu"><strong>Ingeniería en Sistemas de Información</strong><span>UTN FRBA, en curso. Formación complementaria en Machine Learning (Talento Tech).</span></p>
         </div>
-        <div class="about-visual" aria-hidden="true">
-          <div class="about-terminal">
-            <div class="terminal-header">
-              <span class="terminal-dot terminal-dot--red"></span>
-              <span class="terminal-dot terminal-dot--yellow"></span>
-              <span class="terminal-dot terminal-dot--green"></span>
-              <span class="terminal-title">nova.py</span>
-            </div>
-            <div class="terminal-body">
-              <p><span class="t-keyword">class</span> <span class="t-class">Developer</span>:</p>
-              <p>&nbsp;&nbsp;<span class="t-keyword">def</span> <span class="t-fn">__init__</span>(self):</p>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;self.name = <span class="t-str">"Agustín Novarese"</span></p>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;self.role = <span class="t-str">"AI Backend Dev"</span></p>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;self.stack = [</p>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"Python"</span>, <span class="t-str">"Claude"</span>,</p>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"RAG"</span>, <span class="t-str">"Supabase"</span></p>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;]</p>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;self.location = <span class="t-str">"Buenos Aires 🇦🇷"</span></p>
-              <p class="t-cursor">&nbsp;&nbsp;&nbsp;&nbsp;self.open_to = <span class="t-str">"new roles"</span><span class="cursor">▋</span></p>
-            </div>
-          </div>
+
+        <div class="stack" aria-labelledby="stack-heading">
+          <h3 id="stack-heading" class="stack-title">Con qué trabajo</h3>
+          <dl class="stack-grid">
+            <div><dt>IA aplicada</dt><dd>Claude API, Groq, Gemini, RAG con pgvector, Whisper, MCP, LangChain</dd></div>
+            <div><dt>Backend y datos</dt><dd>Python, PostgreSQL, Supabase, MySQL, Slack API</dd></div>
+            <div><dt>Frontend</dt><dd>React, Next.js, TypeScript, Tailwind CSS</dd></div>
+            <div><dt>Automatización</dt><dd>Playwright, scraping, Pandas, Power BI, Git</dd></div>
+          </dl>
         </div>
       </div>
     </section>
 
-    <!-- CERTIFICACIONES -->
-    <section class="section certs" id="certificaciones" aria-labelledby="certs-heading">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-label">Certificaciones</span>
+    <!-- FORMACIÓN -->
+    <section class="section" id="formacion" aria-labelledby="certs-heading">
+      <div class="wrap">
+        <header class="section-head">
           <h2 id="certs-heading">Formación</h2>
           <p>Aprendizaje continuo en paralelo a proyectos reales.</p>
-        </div>
-        <div class="certs-grid" data-certs>
-
-          <div class="cert-item">
-            <span class="cert-issuer cert-issuer--itschool">ITSchool</span>
-            <span class="cert-title">Python Developer</span>
-            <span class="cert-year">2025</span>
-            <a class="cert-view" href="certs/itschool-python.webp" target="_blank" rel="noopener" aria-label="Ver diploma: Python Developer (ITSchool)">Ver diploma</a>
-          </div>
-          <div class="cert-item">
-            <span class="cert-issuer cert-issuer--cac">Codo a Codo</span>
-            <span class="cert-title">Python</span>
-            <span class="cert-year">2024</span>
-            <a class="cert-view" href="certs/codoacodo-python.webp" target="_blank" rel="noopener" aria-label="Ver diploma: Python (Codo a Codo)">Ver diploma</a>
-          </div>
-          <div class="cert-item">
-            <span class="cert-issuer cert-issuer--desafio">Desafío Latam</span>
-            <span class="cert-title">Programación con Python para el Análisis de Datos</span>
-            <span class="cert-year">2024</span>
-            <a class="cert-view" href="certs/desafiolatam-python-analisis-datos.webp" target="_blank" rel="noopener" aria-label="Ver diploma: Programación con Python para el Análisis de Datos (Desafío Latam)">Ver diploma</a>
-          </div>
-          <div class="cert-item">
-            <span class="cert-issuer cert-issuer--desafio">Desafío Latam</span>
-            <span class="cert-title">Introducción al Análisis de Datos con Python</span>
-            <span class="cert-year">2024</span>
-            <a class="cert-view" href="certs/desafiolatam-intro-analisis-datos.webp" target="_blank" rel="noopener" aria-label="Ver diploma: Introducción al Análisis de Datos con Python (Desafío Latam)">Ver diploma</a>
-          </div>
-          <div class="cert-item">
-            <span class="cert-issuer cert-issuer--udemy">Udemy</span>
-            <span class="cert-title">Bases de Datos MySQL + MongoDB</span>
-            <span class="cert-year">2023</span>
-            <a class="cert-view" href="certs/udemy-mysql-mongodb.webp" target="_blank" rel="noopener" aria-label="Ver diploma: Bases de Datos MySQL + MongoDB (Udemy)">Ver diploma</a>
-          </div>
-          <div class="cert-item">
-            <span class="cert-issuer cert-issuer--alteryx">Alteryx</span>
-            <span class="cert-title">Designer Core Certification</span>
-            <span class="cert-year">2025</span>
-            <a class="cert-view" href="certs/alteryx-designer-core.webp" target="_blank" rel="noopener" aria-label="Ver diploma: Designer Core Certification (Alteryx)">Ver diploma</a>
-          </div>
-          <div class="cert-item">
-            <span class="cert-issuer cert-issuer--itschool">ITSchool</span>
-            <span class="cert-title">Power BI</span>
-            <span class="cert-year">2025</span>
-            <a class="cert-view" href="certs/itschool-power-bi.webp" target="_blank" rel="noopener" aria-label="Ver diploma: Power BI (ITSchool)">Ver diploma</a>
-          </div>
-          <div class="cert-item">
-            <span class="cert-issuer cert-issuer--google">Google</span>
-            <span class="cert-title">Fundamentos de Ciberseguridad</span>
-            <span class="cert-year">2024</span>
-            <a class="cert-view" href="certs/google-fundamentos-ciberseguridad.webp" target="_blank" rel="noopener" aria-label="Ver diploma: Fundamentos de Ciberseguridad (Google)">Ver diploma</a>
-          </div>
-          <div class="cert-item">
-            <span class="cert-issuer cert-issuer--google">Google</span>
-            <span class="cert-title">Gestión de Riesgos de Seguridad</span>
-            <span class="cert-year">2024</span>
-            <a class="cert-view" href="certs/google-gestion-riesgos-seguridad.webp" target="_blank" rel="noopener" aria-label="Ver diploma: Gestión de Riesgos de Seguridad (Google)">Ver diploma</a>
-          </div>
-          <div class="cert-item">
-            <span class="cert-issuer cert-issuer--ibm">IBM</span>
-            <span class="cert-title">Enterprise Design Thinking Practitioner</span>
-            <span class="cert-year">2024</span>
-            <a class="cert-view" href="certs/ibm-design-thinking-practitioner.webp" target="_blank" rel="noopener" aria-label="Ver diploma: Enterprise Design Thinking Practitioner (IBM)">Ver diploma</a>
-          </div>
-          <div class="cert-item">
-            <span class="cert-issuer cert-issuer--ibm">IBM</span>
-            <span class="cert-title">Enterprise Design Thinking Co-Creator</span>
-            <span class="cert-year">2024</span>
-            <a class="cert-view" href="certs/ibm-design-thinking-co-creator.webp" target="_blank" rel="noopener" aria-label="Ver diploma: Enterprise Design Thinking Co-Creator (IBM)">Ver diploma</a>
-          </div>
-          <div class="cert-item">
-            <span class="cert-issuer cert-issuer--kaggle">Kaggle</span>
-            <span class="cert-title">Data Visualization</span>
-            <span class="cert-year">2024</span>
-            <a class="cert-view" href="certs/kaggle-data-visualization.webp" target="_blank" rel="noopener" aria-label="Ver diploma: Data Visualization (Kaggle)">Ver diploma</a>
-          </div>
-
-        </div>
+        </header>
+        <ul class="certs">
+          <li><span class="cert-title">Python Developer</span><span class="cert-issuer">ITSchool</span><span class="cert-year">2025</span><a class="cert-view" href="certs/itschool-python.webp" target="_blank" rel="noopener" aria-label="Ver diploma: Python Developer (ITSchool)">Ver diploma</a></li>
+          <li><span class="cert-title">Power BI</span><span class="cert-issuer">ITSchool</span><span class="cert-year">2025</span><a class="cert-view" href="certs/itschool-power-bi.webp" target="_blank" rel="noopener" aria-label="Ver diploma: Power BI (ITSchool)">Ver diploma</a></li>
+          <li><span class="cert-title">Designer Core Certification</span><span class="cert-issuer">Alteryx</span><span class="cert-year">2025</span><a class="cert-view" href="certs/alteryx-designer-core.webp" target="_blank" rel="noopener" aria-label="Ver diploma: Designer Core Certification (Alteryx)">Ver diploma</a></li>
+          <li><span class="cert-title">Python</span><span class="cert-issuer">Codo a Codo</span><span class="cert-year">2024</span><a class="cert-view" href="certs/codoacodo-python.webp" target="_blank" rel="noopener" aria-label="Ver diploma: Python (Codo a Codo)">Ver diploma</a></li>
+          <li><span class="cert-title">Programación con Python para el Análisis de Datos</span><span class="cert-issuer">Desafío Latam</span><span class="cert-year">2024</span><a class="cert-view" href="certs/desafiolatam-python-analisis-datos.webp" target="_blank" rel="noopener" aria-label="Ver diploma: Programación con Python para el Análisis de Datos (Desafío Latam)">Ver diploma</a></li>
+          <li><span class="cert-title">Introducción al Análisis de Datos con Python</span><span class="cert-issuer">Desafío Latam</span><span class="cert-year">2024</span><a class="cert-view" href="certs/desafiolatam-intro-analisis-datos.webp" target="_blank" rel="noopener" aria-label="Ver diploma: Introducción al Análisis de Datos con Python (Desafío Latam)">Ver diploma</a></li>
+          <li><span class="cert-title">Data Visualization</span><span class="cert-issuer">Kaggle</span><span class="cert-year">2024</span><a class="cert-view" href="certs/kaggle-data-visualization.webp" target="_blank" rel="noopener" aria-label="Ver diploma: Data Visualization (Kaggle)">Ver diploma</a></li>
+          <li><span class="cert-title">Fundamentos de Ciberseguridad</span><span class="cert-issuer">Google</span><span class="cert-year">2024</span><a class="cert-view" href="certs/google-fundamentos-ciberseguridad.webp" target="_blank" rel="noopener" aria-label="Ver diploma: Fundamentos de Ciberseguridad (Google)">Ver diploma</a></li>
+          <li><span class="cert-title">Gestión de Riesgos de Seguridad</span><span class="cert-issuer">Google</span><span class="cert-year">2024</span><a class="cert-view" href="certs/google-gestion-riesgos-seguridad.webp" target="_blank" rel="noopener" aria-label="Ver diploma: Gestión de Riesgos de Seguridad (Google)">Ver diploma</a></li>
+          <li><span class="cert-title">Enterprise Design Thinking Practitioner</span><span class="cert-issuer">IBM</span><span class="cert-year">2024</span><a class="cert-view" href="certs/ibm-design-thinking-practitioner.webp" target="_blank" rel="noopener" aria-label="Ver diploma: Enterprise Design Thinking Practitioner (IBM)">Ver diploma</a></li>
+          <li><span class="cert-title">Enterprise Design Thinking Co-Creator</span><span class="cert-issuer">IBM</span><span class="cert-year">2024</span><a class="cert-view" href="certs/ibm-design-thinking-co-creator.webp" target="_blank" rel="noopener" aria-label="Ver diploma: Enterprise Design Thinking Co-Creator (IBM)">Ver diploma</a></li>
+          <li><span class="cert-title">Bases de Datos MySQL + MongoDB</span><span class="cert-issuer">Udemy</span><span class="cert-year">2023</span><a class="cert-view" href="certs/udemy-mysql-mongodb.webp" target="_blank" rel="noopener" aria-label="Ver diploma: Bases de Datos MySQL + MongoDB (Udemy)">Ver diploma</a></li>
+        </ul>
       </div>
     </section>
 
     <!-- CONTACTO -->
     <section class="section contact" id="contacto" aria-labelledby="contact-heading">
-      <div class="container contact-inner">
-        <div class="section-header">
-          <span class="section-label">Contacto</span>
-          <h2 id="contact-heading">Trabajemos juntos</h2>
-          <p>Abierto a posiciones de Backend Developer, Desarrollador IA, Analista de Datos, Analista E-commerce o automatización y scraping.</p>
-          <div class="contact-badges">
-            <span class="contact-badge contact-badge--green">
-              <span class="hero-badge-dot" aria-hidden="true"></span>
-              Disponible
-            </span>
-            <span class="contact-badge contact-badge--purple">
-              📚 Machine Learning — en curso
-            </span>
-          </div>
+      <div class="wrap contact-inner">
+        <h2 id="contact-heading" class="contact-title">Trabajemos juntos</h2>
+        <p class="contact-sub">Busco posiciones de desarrollo full stack, backend o IA aplicada, o de análisis con foco en datos y automatización.</p>
+        <div class="email-row">
+          <span id="email-text" class="email-text">agustinfnovarese@gmail.com</span>
+          <button id="copy-email" class="btn btn--small" type="button" data-copy="agustinfnovarese@gmail.com">Copiar</button>
         </div>
         <div class="contact-actions">
-          <a href="mailto:agustinfnovarese@gmail.com?subject=Oportunidad%20laboral%20para%20Agustín%20Novarese" class="btn btn--primary btn--large">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            Enviar email
-          </a>
-          <a href="Agustin_Novarese_CV_2026.pdf" download class="btn btn--ghost btn--large">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Descargar CV
-          </a>
-          <a href="https://www.linkedin.com/in/agustinnovarese/" target="_blank" rel="noopener" class="btn btn--ghost btn--large">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-            LinkedIn
-          </a>
-          <a href="https://github.com/Coddek" target="_blank" rel="noopener" class="btn btn--ghost btn--large">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-            GitHub
-          </a>
+          <a href="mailto:agustinfnovarese@gmail.com?subject=Oportunidad%20laboral%20para%20Agust%C3%ADn%20Novarese" class="btn btn--primary">Enviar email</a>
+          <a href="https://www.linkedin.com/in/agustinnovarese/" target="_blank" rel="noopener" class="btn btn--ghost">LinkedIn</a>
+          <a href="https://github.com/Coddek" target="_blank" rel="noopener" class="btn btn--ghost">GitHub</a>
+          <a href="Agustin_Novarese_CV_2026.pdf" download class="btn btn--ghost">Descargar CV</a>
         </div>
       </div>
     </section>
-
   </main>
 
-  <!-- FOOTER -->
-  <footer class="footer" role="contentinfo">
-    <div class="container footer-inner">
-      <p>© 2026 Agustín Novarese · Buenos Aires, Argentina</p>
-      <a href="#" class="footer-top" aria-label="Volver arriba">↑</a>
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p>© 2026 Agustín Novarese</p>
+      <a href="#top">Volver arriba</a>
     </div>
   </footer>
 
-  <!-- Scripts -->
   <dialog class="cert-modal" id="cert-modal" aria-label="Diploma">
     <button class="cert-modal-close" type="button" aria-label="Cerrar">&times;</button>
     <img class="cert-modal-img" alt="">
     <p class="cert-modal-error" hidden>No se pudo cargar el diploma.</p>
   </dialog>
 
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
-  <script defer src="lib/manifest.js"></script>
-  <script defer src="main.js?v=20261027"></script>
-
+  <script defer src="lib/systems.js?v=5"></script>
+  <script defer src="main.js?v=5"></script>
 </body>
 </html>
